@@ -1,0 +1,268 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body {
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+nav {
+  font-family: sans-serif;
+  z-index: 10;
+position: absolute;
+background-color:#C1C015;
+height: 10vh;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1vw 3vw;
+}
+nav img {
+height: 70px;
+width: 130px;
+}
+
+.testride {
+text-align: center;
+
+padding: 20px 30px;
+/* background-color: rgb(42, 27, 141); */
+/* border: 2px solid rgba(0, 0, 0, 0.216); */
+/* border-radius: 20px 0px 20px 20px; */
+/* border-radius: 20px; */
+height: fit-content;
+width: fit-content;
+display: flex;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+}
+.testride h1 {
+font-family: "Cedarville Cursive", cursive;
+
+font-size: 2rem;
+opacity: 0.6;
+
+color: rgb(15, 8, 86);
+text-align: center;
+}
+
+.navdirectionbox {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #0d18bd;
+height: 40px;
+width: 40px;
+border-radius: 50%;
+}
+
+.navdirectionbox i {
+font-size: 2rem;
+color: white;
+}
+.navdirectionbox a {
+text-decoration: none;
+}
+
+.navlinks {
+display: flex;
+gap: 1.5vw;
+text-decoration: none;
+}
+.navlinks a {
+  margin-right: 10px;
+color: white;
+background-color: #0d18bd;
+padding: 0.5vw 1vw;
+/* box-shadow: 2px 2px 2px 2px black; */
+text-decoration: none;
+}
+
+#testridebtn{
+border: 2px solid yellow;
+}
+.navlinks a:hover {
+background-color: rgb(0, 0, 0);
+}
+
+.videosection {
+position: relative;
+overflow: hidden;
+height: 100vh;
+width: 100vw;
+}
+
+video {
+object-fit: cover;
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+transform: translate(-50%, -50%);
+}
+
+
+main {
+  padding-top: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+  background-color: rgba(21, 18, 18, 0.845);
+  opacity: 0.7;
+  height: 100vh;
+  width: 100vw;
+}
+
+.box {
+  margin-top: 100px;
+  opacity: 1;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  width: 12rem;
+  color: rgb(255, 251, 0);
+  background-color: #1322c5;
+  border-radius: 50%;
+}
+
+.box h2 {
+  font-size: 8rem;
+}
+
+@media (max-width: 1200px) {
+  .box {
+      height: 10rem;
+      width: 10rem;
+  }
+
+  .box h2 {
+      font-size: 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+      height: 8rem;
+      width: 8rem;
+  }
+
+  .box h2 {
+      font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+      height: 6rem;
+      width: 6rem;
+  }
+
+  .box h2 {
+      font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .box {
+      height: 4rem;
+      width: 4rem;
+  }
+
+  .box h2 {
+      font-size: 3rem;
+  }
+}
+
+.tagline h1 {
+  font-family: Yellowtail;
+  color: rgb(227, 227, 234);
+  font-size: 10rem;
+  font-weight: 100;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.footerbox {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #000000;
+  /* border: 1px solid #ddd; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .footerbox {
+      flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerbox {
+      flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerbox {
+      flex: 1 1 100%;
+      padding: 10px;
+      margin: 5px;
+  }
+}
+
+.twisted-buttons {
+  min-height: 50%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.twisted-buttons button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #754EF9;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.twisted-buttons button:hover {
+  background-color: #000000;
+  color: yellow;
+  
+}
