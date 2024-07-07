@@ -18,7 +18,7 @@ gsap.from(".bike-listing-container", {
   x: 400,
 
   duration: 2,
-  delay: 1,
+  delay: 0,
   
   scrollTrigger: ".bike-listing-container"
 });
